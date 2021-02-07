@@ -29,7 +29,7 @@ app.post('/api/auth/login', (req, res) => {
         maxAge: 86400000,
         httpOnly: true
     })
-    res.send({ accessToken, refreshToken })
+    res.send(200)
 })
 
 function authenticate(req, res, next) {
